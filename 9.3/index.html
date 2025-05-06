@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+        table {
+            margin: auto;
+            border: 5px solid #000066;
+            width: 600px;
+            border-collapse: collapse;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        th {
+            background-color: #000066;
+            color: #fff;
+            padding: 10px;
+        }
+        td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Lighthouse Island Bistro</h1>
+    <p>Enjoy our specialty coffee menu crafted with love and care.</p>
+    <table>
+        <tr>
+            <th colspan="3">Lighthouse Island Bistro Specialty Coffee Menu</th>
+        </tr>
+        <tr>
+            <th>Specialty Coffee</th>
+            <th>Description</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>Lite Latte</td>
+            <td>Indulge in a shot of espresso with steamed, skim milk.</td>
+            <td>$3.50</td>
+        </tr>
+        <tr>
+            <td>Mocha Latte</td>
+            <td>Choose dark or milk chocolate with steamed milk.</td>
+            <td>$4.00</td>
+        </tr>
+        <tr>
+            <td>MCP Latte</td>
+            <td>A luscious mocha latte with caramel and pecan syrup.</td>
+            <td>$4.50</td>
+        </tr>
+    </table>
+
+</body>
+</html>

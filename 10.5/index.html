@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact Form</title>
+    <meta charset="utf-8">
+    <style>
+        form {
+            background-color: #f9f9f9; /* Changed background color */
+            border: 1px solid #ccc; /* Added border */
+            border-radius: 8px; /* Added rounded corners */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Added subtle shadow */
+            font-family: Arial, sans-serif;
+            width: 350px;
+            padding: 10px;
+        }
+        label {
+            float: left;
+            clear: left;
+            display: block;
+            width: 100px;
+            padding-right: 10px;
+            margin-top: 10px;
+            text-align: right;
+            font-weight: bold; /* Made labels bold */
+        }
+        input, textarea {
+            display: block;
+            margin-top: 10px;
+            border: 1px solid #ccc; /* Added border */
+            border-radius: 4px; /* Added rounded corners */
+            padding: 0.5em; /* Added padding */
+        }
+        input:focus, textarea:focus {
+            border-color: #007BFF; /* Highlight border on focus */
+            outline: none; /* Removed default outline */
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Added focus shadow */
+        }
+        input[type="submit"] {
+            margin-left: 110px;
+            background-color: #007BFF; /* Added background color */
+            color: white; /* Changed text color */
+            border: none; /* Removed border */
+            border-radius: 4px; /* Added rounded corners */
+            padding: 0.5em 1em; /* Adjusted padding */
+            cursor: pointer; /* Changed cursor to pointer */
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3; /* Darker background on hover */
+        }
+        @supports (display: grid) {
+            form {
+                display: grid;
+                grid-template-rows: auto;
+                grid-template-columns: 6em 1fr;
+                grid-gap: 1em;
+                gap: 1em;
+                background-color: #f9f9f9; /* Changed background color */
+                border: 1px solid #ccc; /* Added border */
+                border-radius: 8px; /* Added rounded corners */
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Added subtle shadow */
+                font-family: Arial, sans-serif;
+                width: 60%;
+                min-width: 20em;
+                padding: 2em;
+            }
+            label {
+                text-align: left;
+                margin-top: 0;
+                font-weight: bold; /* Made labels bold */
+            }
+            input[type="submit"] {
+                grid-column: 2/3;
+                width: 10em;
+                margin-left: 0;
+                background-color: #007BFF; /* Added background color */
+                color: white; /* Changed text color */
+                border: none; /* Removed border */
+                border-radius: 4px; /* Added rounded corners */
+                padding: 0.5em 1em; /* Adjusted padding */
+                cursor: pointer; /* Changed cursor to pointer */
+            }
+            input[type="submit"]:hover {
+                background-color: #0056b3; /* Darker background on hover */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Contact Us</h1>
+    <form method="get">
+        <label for="myName">Name:</label>
+        <input type="text" name="myName" id="myName">
+        <label for="myEmail">E-mail:</label>
+        <input type="text" name="myEmail" id="myEmail">
+        <label for="myComments">Comments:</label>
+        <textarea name="myComments" id="myComments" rows="2" cols="20"></textarea>
+        <input id="mySubmit" type="submit" value="Submit">
+    </form>
+</body>
+</html>

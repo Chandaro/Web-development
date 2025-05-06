@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        table {
+            margin: auto;
+            border: 5px solid #000066;
+            width: 600px;
+            border-collapse: collapse;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        th {
+            background-color: #000066;
+            color: white;
+            border: 1px solid #000066;
+            padding: 10px;
+            text-transform: uppercase;
+        }
+
+        td {
+            border: 1px solid #000066;
+            padding: 10px;
+            text-align: center;
+        }
+
+        tr:nth-child(even) {
+            background-color: #e6e6ff;
+        }
+
+        tr:hover {
+            background-color: #d1d1ff;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <tr>
+            <th>Specialty Coffee</th>
+            <th>Description</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>Lite Latte</td>
+            <td>Indulge in a shot of espresso with steamed, skim milk.</td>
+            <td>$3.50</td>
+        </tr>
+        <tr>
+            <td>Mocha Latte</td>
+            <td>Choose dark or milk chocolate with steamed milk.</td>
+            <td>$4.00</td>
+        </tr>
+        <tr>
+            <td>MCP Latte</td>
+            <td>A luscious mocha latte with caramel and pecan syrup.</td>
+            <td>$4.50</td>
+        </tr>
+    </table>
+
+</body>
+</html>
